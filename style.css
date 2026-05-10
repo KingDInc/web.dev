@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 #navbar {
@@ -399,7 +399,7 @@ main {
 .html-card:hover,
 .css-card:hover,
 .javascript-card:hover {
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.041);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.096);
 }
 
 .lang-card img {
@@ -411,6 +411,10 @@ main {
     font-weight: 400;
     text-decoration: none;
     color: black;
+}
+
+.lang-topic:hover {
+    text-decoration: underline;
 }
 
 .icon-name {
@@ -426,4 +430,219 @@ main {
 
 .css-card p {
     margin-bottom: 50px;
+}
+
+
+
+
+
+/* LEARN THE WEB */
+.learn-the-web {
+    background-color: white;
+    padding: 30px 360px;
+}
+
+.learn-the-web button a {
+    text-decoration: none;
+    color: #1a73e8;
+    background-color: transparent;
+    border: 2px solid #1a73e8;
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.learn-the-web button a:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.learn-the-web p {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.learn-the-web .html-card,
+.learn-the-web .css-card,
+.learn-the-web .javascript-card {
+    background-color: #f5f6f7;
+}
+
+.course-topic {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 540;
+    color: black;
+}
+
+.course-topic:hover {
+    text-decoration: underline;
+}
+
+.learn-the-web img {
+    width: 300px;
+}
+
+.learn-the-web .html-card,
+.learn-the-web .css-card,
+.learn-the-web .javascript-card {
+    padding: 60px 30px;
+    width: 700px;
+}
+
+.learn-the-web button a:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+
+
+
+
+/* BLOG SECTION */
+.blog-section {
+    padding: 50px 360px;
+    background-color: #f5f6f7;
+    display: flex;
+    align-items: center;
+
+}
+
+.blog-section a {
+    text-decoration: none;
+    color: #1a73e8;
+    background-color: transparent;
+    border: 2px solid #1a73e8;
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.blog-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.blog-section h3 {
+    font-size: 32px;
+    font-weight: 500;
+    ;
+}
+
+.blog-section a:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.blog-section img {
+    width: 290px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* READMEs */
+.white-row {
+    padding: 40px 360px;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #dadce0;
+}
+
+.white-row p {
+    font-size: 16px;
+    font-weight: 400;
+    /* margin-bottom: 30px; */
+}
+
+.readme-topic {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#readme-subtopic {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+#readme-subtopic a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#readme-subtopic a:hover {
+    text-decoration: underline;
+}
+
+#row-button {
+    text-decoration: none;
+    color: #1a73e8;
+    background-color: white;
+    border: 2px solid #1a73e8;
+    border-radius: 40px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+#row-button:hover {
+    border: none;
+    background: transparent;
+}
+
+.inline-link {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.inline-link:hover {
+    text-decoration: underline;
+}
+
+.right-col {
+    width: 380px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 18px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 18px;
+}
+
+
+
+
+/* CSS FOR BLACK ROW */
+.black-row {
+    padding: 40px 360px;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: space-between;
+    gap: 20px;
+    /* border: 1px solid #dadce0; */
+    background-color: #f5f6f7;
+}
+
+.black-row p {
+    font-size: 16px;
+    font-weight: 400;
 }
