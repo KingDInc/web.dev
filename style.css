@@ -526,6 +526,7 @@ main {
     flex-direction: column;
     gap: 40px;
 }
+
 .blog-section h3 {
     font-size: 32px;
     font-weight: 500;
@@ -549,7 +550,7 @@ main {
     padding: 40px 360px;
     padding-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 20px;
     border: 1px solid #dadce0;
@@ -635,7 +636,7 @@ main {
     padding: 40px 360px;
     padding-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 20px;
     /* border: 1px solid #dadce0; */
@@ -646,3 +647,56 @@ main {
     font-size: 16px;
     font-weight: 400;
 }
+
+
+
+
+
+/* FOOTER-LINKS */
+.form-section {
+    padding: 50px 600px;
+    background-color: #f5f6f7;
+    border: 1px solid #dadce0;
+}
+
+.form-topic {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.form-section p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form label {
+    font-size: 16px;
+    font: 400;
+}
+
+.form input {
+    font-size: 16px;
+    font: 400;
+    background-color: white;
+    border: 1px solid #e8eaed;
+    padding: 10px 0px;
+}
+
+.name-input {
+    width: 270px;
+}
+
+#yourEmail {
+    display: block;
+    width: 100%;
+}
+
+.name
+.name-form {
+    display: flex;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
