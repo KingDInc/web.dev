@@ -552,94 +552,98 @@
 
 
         <!-- FORM SECTION -->
-        <!-- <section class="form-section">
-            <h2 class="form-topic">Developer Newsletter</h2>
-            <p>Get the latest news, techniques and updates straight to you inbox.</p>
+        <section class="form-section">
+            <div class="form-content">
+                <h2 class="form-topic">Developer Newsletter</h2>
+                <p class="form-subtopic">Get the latest news, techniques and updates straight to you inbox.</p>
 
-            <div class="form">
-                <div class="name-form">
-                    <div class="firstname-div">
-                        <label for="firstName">First Name</label>
-                        <input class="name-input" placeholder="First Name" id="firstName" type="text">
+                <div class="form">
+                    <div class="name-form">
+                        <div class="firstname-div">
+                            <label for="firstName">First Name</label>
+                            <input class="name-input" placeholder="First Name" id="firstName" type="text">
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input class="name-input" placeholder="Last Name" type="text">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="lastName">Last Name</label>
-                        <input class="name-input" placeholder="Last Name" type="text">
+                    <div class="email-div">
+                        <label for="yourEmail">Your Email</label>
+                        <input id="yourEmail" placeholder="Your Email" type="email">
                     </div>
 
+                    <div class="country-div">
+                        <label for="country">Country</label>
+                        <select name="country" id="">
+                            <option value=""> United States</option>
+                            <option value=""> United Kingdom</option>
+                            <option value=""> Algeria</option>
+                            <option value=""> Nigeria</option>
+                            <option value=""> Australia</option>
+                            <option value=""> Gambia</option>
+                        </select>
+                    </div>
+                    <p>Don't worry, no spam here! Your information will only be used for web.dev and Chrome related
+                        updates
+                        and our emails are typically no more than 1-2 times a month. You can unsubscribe anytime.</p>
+
+                    <span class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <p>Add me to the web.dev mailing list.</p>
+                    </span>
+
+                    <span class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <p>I accept Google's <a href="">Terms and Conditions</a> and acknowledge that my information
+                            will be
+                            used in accordance with Google's <a href="">Privacy Policy</a>.</p>
+                    </span>
+                    <span class="recaptcha-div">
+                        <img class="recaptcha" src="/recaptcha .png" alt="">
+                        <button><a id="subscribe-btn" href="">SUBSCRIBE</a></button>
+                    </span>
                 </div>
-                <label for="yourEmail">Your Email</label>
-                <input id="yourEmail" placeholder="Your Email" type="email">
-
-                <label for="country">Country</label>
-                <select name="country" id="">
-                    <option value=""> United States</option>
-                    <option value=""> United Kingdom</option>
-                    <option value=""> Algeria</option>
-                    <option value=""> Nigeria</option>
-                    <option value=""> Australia</option>
-                    <option value=""> Gambia</option>
-                </select>
-
-                <p>Don't worry, no spam here! Your information will only be used for web.dev and Chrome related
-                    updates
-                    and our emails are typically no more than 1-2 times a month. You can unsubscribe anytime.</p>
-
-                <span>
-                    <input type="checkbox" name="" id="">
-                    <p>Add me to the web.dev mailing list.</p>
-                </span>
-
-                <span>
-                    <input type="checkbox" name="" id="">
-                    <p>I accept Google's <a href="">Terms and Conditions</a> and acknowledge that my information
-                        will be
-                        used in accordance with Google's <a href="">Privacy Policy</a>.</p>
-                </span>
-
-                <img src="/recaptcha .png" alt="">
-
             </div>
         </section>
 
- -->
+
 
 
         <!-- FOOTER -->
-        <!-- <footer>
-            <div>
+        <footer>
+            <div class="footer-text">
                 <img src="/lockup.svg" alt="">
 
                 <p>We want to help you build beautiful, accessible, fast, and secure websites that work cross-browser,
                     and for all of your users. This site is our home for content to help you on that journey, written by
                     members of the Chrome team, and external experts.</p>
-
-                <div class="footer-links">
-                    <div class="left-links">
-                        <p>Contribute </p>
-                        <a href="">File a bug</a>
-                        <a href="">See open issues</a>
-                    </div>
-
-                    <div class="middle-links">
-                        <p>Related Content </p>
-                        <a href="">Chrome for Developers</a>
-                        <a href="">Chromium updates</a>
-                        <a href="">Case studies</a>
-                        <a href="">Podcasts & shows</a>
-                    </div>
-
-                    <div class="middle-links">
-                        <p>Follow </p>
-                        <a href="">@ChromiumDev on X</a>
-                        <a href="">Youtube</a>
-                        <a href="">Chrome for Developers on Linkedin</a>
-                        <a href="">RSS</a>
-                    </div>
-                </div>
             </div>
-        </footer> -->
+
+            <div class="left-links">
+                <p>Contribute </p>
+                <a href="">File a bug</a>
+                <a href="">See open issues</a>
+            </div>
+
+            <div class="middle-links">
+                <p>Related Content </p>
+                <a href="">Chrome for Developers</a>
+                <a href="">Chromium updates</a>
+                <a href="">Case studies</a>
+                <a href="">Podcasts & shows</a>
+            </div>
+
+            <div class="right-links">
+                <p>Follow </p>
+                <a href="">@ChromiumDev on X</a>
+                <a href="">Youtube</a>
+                <a href="">Chrome for Developers on Linkedin</a>
+                <a href="">RSS</a>
+            </div>
+        </footer>
 
     </main>
 </body>

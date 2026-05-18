@@ -665,19 +665,31 @@ main {
 
 /* FOOTER-LINKS */
 .form-section {
-    padding: 50px 600px;
+    padding: 50px 30px;
     background-color: #f5f6f7;
     border: 1px solid #dadce0;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-content {
+    width: 80%;
 }
 
 .form-topic {
     font-size: 48px;
     font-weight: 700;
+    text-align: center;
 }
 
-.form-section p {
+.form-subtopic {
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .form label {
@@ -694,7 +706,7 @@ main {
 }
 
 .name-input {
-    width: 270px;
+    width: 331px;
 }
 
 #yourEmail {
@@ -702,12 +714,76 @@ main {
     width: 100%;
 }
 
-.name .name-form {
-    display: flex;
-    grid-template-rows: 1fr 1fr;
+.form .name-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+#firstName {
+    margin-right: 50px;
+}
+
+.email-div {
+    margin-bottom: 20px;
+}
+
+.country-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.country-div select {
+    font-size: 16px;
+    font: 400;
+    background-color: white;
+    border: 1px solid #e8eaed;
+    padding: 10px 0px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 15px;
+    margin: 13px 0px;
+}
+
+.checkbox a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+
+.recaptcha {
+    width: 300px;
+    text-align: center;
+}
+
+#subscribe-btn {
+    color: #1a73e8;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.116);
+}
+
+
+#subscribe-btn:hover {
+    background-color: #e4eefc;
+}
+
+.recaptcha-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.recaptcha-div .recaptcha {
+    margin-left: 200px;
+    margin-bottom: 20px;
 }
 
 
@@ -716,15 +792,52 @@ main {
 
 
 
+/* FOOTER  */
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 30px 50px;
+}
 
+.footer-text {
+    width: 600px;
+}
 
+.footer-text img {
+    width: 160px;
+}
+
+.left-links,
+.middle-links,
+.right-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left-links p,
+.middle-links p,
+.right-links p {
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #1a89ee;
+}
 
 
 /* RESPONSIVENESS */
 /* SCREEN 0-480 */
 @media (min-width:0px) and (max-width:480px) {
     body {
-        max-width: 480px;
+        width: 480px;
     }
 
     #nav-menu {
@@ -897,7 +1010,7 @@ main {
 
     /* BLOG SECTION RESPONSIVENESS */
     .blog-section {
-        max-width: 480px;
+        width: 480px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -952,12 +1065,34 @@ main {
     .black-row .left-col {
         margin-bottom: 50px;
     }
+
+
+
+
+
+
+    /* FOOTER RESPONSIVENESS */
+    .form-section {
+        padding: 0px;
+        margin: 0px;
+        max-width: 480px;
+    }
+
+    .form-content {
+        /* padding: 0px 10px; */
+    }
+
+    .form-subtopic {
+        padding: 0px 30px;
+    }
+
+    .recaptcha-div .recaptcha {
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+
+
 }
-
-
-
-
-
 
 
 /* RESPONSIVENESS */
@@ -965,7 +1100,7 @@ main {
 
 @media (min-width:481px) and (max-width:768px) {
     body {
-        max-width: 768px;
+        width: 768px;
     }
 
     #nav-menu {
@@ -1051,7 +1186,8 @@ main {
         line-height: 29px;
     }
 
-
+    /* LEARN MORE SECTION */
+    .card-holder {}
 
 
 
@@ -1081,7 +1217,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* padding: 0px 25px; */
-        max-width: 768px;
+        width: 768px;
         column-gap: 20px;
     }
 
@@ -1100,17 +1236,14 @@ main {
         margin-bottom: 20px;
     }
 
-    .learn-the-web .html-card,
-    .learn-the-web .css-card,
-    .learn-the-web .javascript-card {
-        padding: 60px 30px;
-        width: 90%;
-    }
-
     .html-card p,
     .css-card p,
     .javascript-card p {
         margin-bottom: 40px;
+    }
+
+    .explore-the-web .lang-card {
+        width: 708px;
     }
 
 
@@ -1123,7 +1256,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0px 25px;
-        max-width: 768%;
+        width: 768px;
         margin-bottom: 50px;
     }
 
@@ -1134,6 +1267,13 @@ main {
 
     .card-holder img {
         width: 240px;
+    }
+
+    .learn-the-web .html-card,
+    .learn-the-web .css-card,
+    .learn-the-web .javascript-card {
+        padding: 60px 30px;
+        width: 90%;
     }
 
 
@@ -1169,7 +1309,7 @@ main {
 
     /* BLOG SECTION RESPONSIVENESS */
     .blog-section {
-        max-width: 768px;
+        width: 768px;
         display: flex;
         gap: 10px;
         align-items: center;
@@ -1251,12 +1391,11 @@ main {
 
 
 
-
 /* RESPONSIVENESS */
 /* SCREEN 769 -1279 */
 @media (min-width:769px) and (max-width:1279px) {
     body {
-        max-width: 1279px;
+        width: 1279px;
     }
 
     #nav-menu {
@@ -1299,7 +1438,7 @@ main {
     .white-row {
         padding: 50px 25px;
     }
-        
+
     .black-row {
         padding: 50px 25px;
     }
